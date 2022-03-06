@@ -132,6 +132,9 @@ span {
 
 nav {
     background: #399BFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -161,7 +164,7 @@ nav #submenu {
     display: flex;
     align-items: center;
     position: relative;
-    width: 220px;
+    width: 240px;
     padding: 10px 0;
 }
 

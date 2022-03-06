@@ -17,8 +17,12 @@ nav.addEventListener('mouseleave', () => {
     submenu.style = "transform: translateY(100px);opacity: 0;pointer-events: none;transition: all .5s;";
 });
 
-searchInput.addEventListener('keydown', () => {
-    close.style.display = "block";
+searchInput.addEventListener('keyup', () => {
+    if (searchInput.value === "") {
+        close.style.display = "none";
+    } else {
+        close.style.display = "block";
+    }
 });
 
 close.addEventListener('click', () => {
