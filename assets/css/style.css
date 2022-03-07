@@ -49,7 +49,19 @@ span {
     margin-left: 0.5em;
 }
 
-/* Header Section */
+.title,
+.subtitle {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 0.9em;
+    font-weight: 800;
+    color: grey;
+    margin: 1em 0;
+}
+
+/* Header Top */
 
 .header-top {
     background: #F3F6F9;
@@ -84,6 +96,8 @@ span {
 .logo img {
     max-width: 200px;
 }
+
+/* Header Bottom */
 
 .header-bottom {
     padding: 15px 0;
@@ -129,6 +143,8 @@ span {
     font-size: 0.8em;
     font-weight: 500;
 }
+
+/* Navigation */
 
 nav {
     background: #399BFF;
@@ -184,7 +200,7 @@ nav #submenu {
     display: none;
 }
 
-::placeholder {
+.search input::placeholder {
     color: #b6dbff;
     font-weight: 700;
 }
@@ -203,12 +219,6 @@ nav #menu li:not(:last-child) a {
 nav #menu li:nth-child(3) {
     position: relative;
 }
-
-/* nav #menu li:nth-child(3):hover #submenu {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-} */
 
 #submenu {
     position: absolute;
@@ -239,9 +249,13 @@ nav #menu li:nth-child(3) {
 
 /* Hero Section */
 
+#hero {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
 #hero .max-width {
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     background: url(../images/hero-bg.jpg) no-repeat;
     background-size: 70%;
     background-position: right;
@@ -315,4 +329,370 @@ nav #menu li:nth-child(3) {
 .hero-button:last-child:hover {
     background: #399BFF;
     color: #fff;
+}
+
+/* Appoinment Section */
+
+#appoinment .max-width {
+    transform: translateY(-60px);
+}
+
+#appoinment .max-width a {
+    padding: 1em 2em;
+    background: #fff;
+    font-weight: 700;
+    border: 0;
+    border-radius: 10px;
+    color: #111;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.appoinment-input-area {
+    background-color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+}
+
+.appoinment-input-area input {
+    width: 18%;
+    margin: 0 0.2em;
+    padding: 1em 0 1em 1em;
+    font-weight: 600;
+    outline: none;
+    border: 1.8px solid #80808099;
+    border-radius: 4px;
+}
+
+.appoinment-input-area input::placeholder {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #80808099;
+}
+
+.appoinment-input-area input[type="submit"] {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #fff;
+    background: #399BFF;
+    padding: 1em 0 1em 0;
+    border: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.appoinment-input-area input[type="submit"]:hover {
+    background: #0f62b4;
+}
+
+.appoinment-input-area input:focus {
+    border: 2px solid #6b666699;
+}
+
+.appoinment-info {
+    color: #fff;
+    display: flex;
+}
+
+.open-hours-in-appoinment,
+.location-in-appoinment,
+.covidcare-in-appoinment {
+    background: #399BFF;
+    display: flex;
+    width: 33.33%;
+    padding: 3em 2.5em;
+    height: 200px;
+}
+
+.appoinment-title {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.location-in-appoinment {
+    background: #2290FF;
+}
+
+.open-hours-in-appoinment .first-clock,
+.location-in-appoinment .fa-location-dot,
+.covidcare-in-appoinment .fa-virus-covid {
+    margin-right: 1em;
+    margin-top: 0.1em;
+    font-size: 2em;
+}
+
+.appoinment-description {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.open-appoinment,
+.close-appoinment {
+    display: flex;
+    font-size: 0.6em;
+    justify-content: start;
+    margin: 1em 0;
+}
+
+.open-date,
+.open-time,
+.close-date,
+.close-time {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-date i,
+.open-time i,
+.close-date i,
+.close-time i {
+    margin-right: 0.5em;
+}
+
+.open-date,
+.close-date {
+    margin-right: 1em;
+}
+
+/* Specialize Section */
+
+#specialize .specialize-cards {
+    display: flex;
+}
+
+#specialize .specialize-cards .specialize-card {
+    padding: 2.5em;
+    border: 1px solid rgba(139, 130, 130, 0.2);
+    margin-top: 2em;
+}
+
+#specialize .specialize-cards .specialize-card:first-child,
+#specialize .specialize-cards .specialize-card:nth-child(2) {
+    border-right: 0;
+}
+
+#specialize .specialize-cards .specialize-card .category {
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: gray;
+}
+
+#specialize .specialize-cards .specialize-card .specialize-card-title {
+    font-size: 1.3em;
+    font-weight: 800;
+    margin: 0.5em 0 1em 0;
+}
+
+#specialize .specialize-cards .specialize-card:not(:nth-child(2)) .specialize-card-title,
+#specialize .specialize-cards .specialize-card:not(:nth-child(2)) i {
+    cursor: pointer;
+    color: #2290FF;
+}
+
+#specialize .specialize-cards .specialize-card:not(:nth-child(2)) i:hover {
+    cursor: pointer;
+    color: #111;
+}
+
+#specialize .specialize-cards .specialize-card:nth-child(2) i:hover {
+    color: #2290FF;
+}
+
+#specialize .specialize-cards .specialize-card .specialize-card-description {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: grey;
+    margin-bottom: 2em;
+}
+
+/* Call Us Emergency */
+
+#call-us-emergency {
+    margin: 5em 0;
+}
+
+
+#call-us-emergency .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(45deg, rgb(27, 141, 255), rgb(8, 98, 187));
+    color: #fff;
+    padding: 3.5em;
+}
+
+.emergency-info {
+    display: flex;
+    align-items: center;
+}
+
+.emergency-info i {
+    margin-right: 1em;
+    font-size: 3em;
+}
+
+.emergency-title {
+    font-size: 1.5em;
+}
+
+.emergency-description {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #eee;
+}
+
+.emergency-button {
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 1em 2.5em;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.emergency-button:hover {
+    background: #222;
+    transform: scale(0.95);
+    color: #fff;
+}
+
+.emergency-button i {
+    margin-right: 0.8em;
+}
+
+/* Department Section */
+
+.department-cards {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 0;
+}
+
+.department-card {
+    width: 24%;
+}
+
+.department-card-image {
+    width: 100%;
+    height: 15em;
+    background: url(../images/card-image1.jpg);
+    background-size: cover;
+    background-position: right top;
+}
+
+.department-card:nth-child(2) .department-card-image {
+    background: url(../images/card-image2.jpg);
+}
+
+.department-card:nth-child(3) .department-card-image {
+    background: url(../images/card-image3.jpg);
+}
+
+.department-card:nth-child(4) .department-card-image {
+    background: url(../images/card-image4.jpg);
+}
+
+.department-card-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 0.6em;
+}
+
+.department-card-subtitle {
+    font-size: 0.9em;
+    font-weight: 700;
+    margin: 0.2em 0 1em 0;
+    color: #2290FF;
+}
+
+.department-card-description {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: grey;
+}
+
+.department-cards .fa-chevron-left,
+.department-cards .fa-chevron-right {
+    font-size: 1em;
+    font-weight: 800;
+    padding: 0.5em 0.65em;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    background: #0f62b4;
+    color: #fff;
+    border: 0;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.department-cards .fa-chevron-left:hover,
+.department-cards .fa-chevron-right:hover {
+    background: #111;
+}
+
+.department-cards .fa-chevron-right {
+    right: 1%;
+    left: auto;
+}
+
+
+.hr {
+    max-width: 1150px;
+    margin: 10em auto 5em auto;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Section */
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0;
+}
+
+.testimonial-card {
+    width: 32.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 3em 2.5em;
+}
+
+.testimonial-card img {
+    width: 4.5em;
+    height: 4.5em;
+    border: 0;
+    border-radius: 50%;
+}
+
+.testimonial-card .testimonial-card-description {
+    font-size: 0.85em;
+    font-weight: 500;
+    color: grey;
+    text-align: center;
+    margin: 3em 0 2em 0;
+}
+
+.testimonial-card .name {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.testimonial-card .designation {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: gray;
 }
