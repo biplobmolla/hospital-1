@@ -3,6 +3,8 @@ const submenu = document.getElementById('submenu');
 const nav = document.querySelector('nav');
 const searchInput = document.getElementById('search-input');
 const close = document.getElementById('close');
+const contactPageLink = document.querySelector('.contact-page-link');
+const contactPageLinkUl = document.querySelector('.contact-page-link ul');
 
 
 menu.addEventListener('mouseover', () => {
@@ -28,4 +30,8 @@ searchInput.addEventListener('keyup', () => {
 close.addEventListener('click', () => {
     searchInput.value = "";
     close.style.display = "none";
+});
+
+contactPageLink.addEventListener('click', () => {
+    contactPageLinkUl.classList.toggle('active');
 });
