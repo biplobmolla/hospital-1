@@ -1,13 +1,17 @@
 const menu = document.getElementById('menu');
+const pageMenu = document.getElementById('pageMenu');
 const submenu = document.getElementById('submenu');
 const nav = document.querySelector('nav');
 const searchInput = document.getElementById('search-input');
-const close = document.getElementById('close');
+const searchClose = document.getElementById('searchClose');
 const contactPageLink = document.querySelector('.contact-page-link');
 const contactPageLinkUl = document.querySelector('.contact-page-link ul');
+const bars = document.getElementById('bars');
+const navClose = document.getElementById('navClose');
+const navLink = document.querySelectorAll('nav a');
 
 
-menu.addEventListener('mouseover', () => {
+pageMenu.addEventListener('mouseover', () => {
     submenu.style = "transform: translateY(0);opacity: 1;pointer-events: auto;";
 });
 
@@ -21,17 +25,40 @@ nav.addEventListener('mouseleave', () => {
 
 searchInput.addEventListener('keyup', () => {
     if (searchInput.value === "") {
-        close.style.display = "none";
+        searchClose.style.display = "none";
     } else {
-        close.style.display = "block";
+        searchClose.style.display = "block";
     }
 });
 
-close.addEventListener('click', () => {
+searchClose.addEventListener('click', () => {
     searchInput.value = "";
-    close.style.display = "none";
+    searchClose.style.display = "none";
 });
 
 contactPageLink.addEventListener('click', () => {
     contactPageLinkUl.classList.toggle('active');
 });
+
+bars.addEventListener('click', () => {
+    menu.classList.add('active');
+});
+
+navClose.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+
+pageMenu.addEventListener('click', () => {
+    submenu.classList.toggle('active');
+});
+
+for (let i = 0; i < navLink.length; i++) {
+    navLink[i].addEventListener('click', () => {
+        if (i == 2) {
+            console.log("This is page menu");
+        } else {
+            menu.classList.remove('active');
+        }
+    });
+
+}

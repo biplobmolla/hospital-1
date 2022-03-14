@@ -1,0 +1,260 @@
+@media only screen and (max-width: 1200px) {
+    .hero-text {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero-text {
+        width: 80%;
+    }
+
+    .info {
+        font-size: 0.6em;
+    }
+
+    .emergency-info {
+        font-size: 0.7rem;
+    }
+
+    .emergency-button {
+        font-size: 0.5em;
+    }
+
+    #call-us-emergency .max-width {
+        padding: 3em;
+    }
+
+    #subscribe {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #hero {
+        font-size: 0.8rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #bars {
+        display: block;
+    }
+
+    #navClose {
+        display: block;
+    }
+
+    nav #menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        background: rgba(0, 0, 0, 1);
+        padding: 5em 0 5em 1.5em;
+        font-size: 1.5em;
+        transform: translateX(-120%);
+    }
+
+    nav #menu.active {
+        transform: translateX(0);
+    }
+
+    #submenu {
+        background: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(15px);
+        opacity: 0;
+        pointer-events: auto;
+        height: 0;
+        overflow: hidden;
+    }
+
+    #submenu.active {
+        height: 160px;
+    }
+
+
+    #get-started {
+        font-size: 0.8rem;
+    }
+
+    #subscribe {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .appoinment-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .open-hours-in-appoinment,
+    .location-in-appoinment,
+    .covidcare-in-appoinment {
+        width: 90%;
+    }
+
+    .appoinment-input-area {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #specialize .specialize-cards {
+        flex-direction: column;
+    }
+
+    .emergency-info {
+        font-size: 0.6rem;
+    }
+
+    .emergency-button {
+        font-size: 0.5em;
+    }
+
+    #call-us-emergency .max-width {
+        padding: 2em;
+    }
+
+    .testimonial-cards {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        margin: 1em 0;
+    }
+
+    .news-cards {
+        flex-direction: column;
+    }
+
+    .news-card {
+        width: 90%;
+    }
+
+    #contact .row {
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+    #contact .row .col:not(:first-child) {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    #contact .row .col ul {
+        margin-top: 1em;
+    }
+
+    .contact-title {
+        font-size: 1.4em;
+    }
+
+    #contact {
+        padding: 3em 0;
+    }
+
+    #get-started {
+        font-size: 0.6rem;
+    }
+
+    #subscribe .max-width {
+        flex-direction: column;
+    }
+
+    .subscribe-info,
+    .subscribe-input {
+        text-align: center;
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .appoinment-input-area {
+
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #hero {
+        font-size: 0.6rem;
+    }
+
+    .emergency-info {
+        font-size: 0.45rem;
+    }
+
+    .emergency-button {
+        font-size: 0.35em;
+    }
+
+    #call-us-emergency .max-width {
+        padding: 0.8em;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    #bars {
+        font-size: 1rem;
+    }
+
+    .search {
+        width: 170px;
+        padding: 8px 0;
+    }
+
+    .search input {
+        width: 90%;
+        padding: 8px 0 8px 5px;
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero-title {
+        font-size: 2em;
+    }
+
+    .hero-button {
+        font-size: 0.6em;
+    }
+
+    .appoinment-input-area input {
+        width: 90%;
+    }
+
+    .emergency-info {
+        font-size: 0.35rem;
+    }
+
+    .emergency-button {
+        font-size: 0.25em;
+    }
+
+    #call-us-emergency .max-width {
+        padding: 0.6em;
+    }
+
+    footer {
+        font-size: 0.6rem;
+    }
+
+}
